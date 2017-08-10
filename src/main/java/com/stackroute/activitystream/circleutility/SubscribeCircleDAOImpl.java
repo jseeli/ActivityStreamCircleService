@@ -51,6 +51,9 @@ public class SubscribeCircleDAOImpl implements SubscribeCircleDAO
 			Session session=sessionFactory.openSession();
 			SubscribeCircle subscribeCircle=(SubscribeCircle)session.get(SubscribeCircle.class,subscribeID);
 			session.close();
+			//For unsubscribe, you are setting "N"
+			//What about at the time of subscribe?
+			//Where are you setting it to "Y"?
 			subscribeCircle.setStatus("N");
 			sessionFactory.getCurrentSession().saveOrUpdate(subscribeCircle);
 			return true;
@@ -66,6 +69,8 @@ public class SubscribeCircleDAOImpl implements SubscribeCircleDAO
 	{
 		try
 		{
+		       //This query will return all the subscribe circles inluding which you unsubscribe
+		       //You should add one more conditon status='Y'
 			Query query=sessionFactory.getCurrentSession().createQuery("from SubscribeCircle where email_id=:emailid");
 			query.setParameter("emailid",emailID);
 			List<SubscribeCircle> listCircles=query.list();
