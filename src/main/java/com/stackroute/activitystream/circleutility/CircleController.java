@@ -28,6 +28,7 @@ public class CircleController
 		circle.setCreation_date(new Date());
 		if(circleDAO.createCircle(circle))
 		{
+			//statusCode and statudDesc shoule be private variables.  Should use only getter/setter methods
 			circle.statusCode="1025";
 			circle.statusDesc="Circle Created";
 		}
@@ -43,6 +44,7 @@ public class CircleController
 	@GetMapping("/removeCircle/{circleID}")
 	public ResponseEntity<Circle> removeCircle(@PathVariable("circleID") String circleID)
 	{
+		//Avoid using 'new' key word to create instance.  use @AutowWired
 		Circle circle=new Circle();
 		System.out.println("--Remove Circle--"+circleID);
 		if(circleDAO.removeCircle(circleID))
