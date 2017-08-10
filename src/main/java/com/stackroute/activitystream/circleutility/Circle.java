@@ -20,6 +20,7 @@ public class Circle extends BaseDomain
 	@Id
 	@NotNull(message="Circle Id can not be Empty")
 	@Size(min=8, max=15)
+	//who will provide circle id?  User will not enter circle id.  Will enter circle name
 	private String circle_id;
 	@NotNull(message="Circle name can not be Empty")
 	private String circle_name;
