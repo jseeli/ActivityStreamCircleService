@@ -29,6 +29,7 @@ public class SubscribeController
 		
 		if(subscribeCircleDAO.subscribeToCircle(subscribeCircle))
 		{
+			//You added BaseDomain but not using it.  
 		return new ResponseEntity<String>("Added to Circle",HttpStatus.OK);
 		}
 		else
@@ -37,6 +38,7 @@ public class SubscribeController
 		}
 	}
 	
+	//Better to send emailID and circleID to unsubscribe
 	@GetMapping("/unsubscribeCircle/{subscribeid}")
 	public ResponseEntity<String> unsubscribeCircle(@PathVariable("subscribeid")int subscribeid)
 	{
