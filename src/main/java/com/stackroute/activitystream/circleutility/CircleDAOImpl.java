@@ -39,18 +39,6 @@ public class CircleDAOImpl implements CircleDAO
 		}
 		
 	}
-	
-	//This method should be private
-	
-	//Using this method anywhere?
-	
-	public Circle getCircleToDelete(String circleID)
-	{
-		Session session=sessionFactory.openSession();
-		Circle circle=session.get(Circle.class,circleID);
-		session.close();
-		return circle;
-	}
 
 	@Transactional
 	@Override
@@ -90,6 +78,7 @@ public class CircleDAOImpl implements CircleDAO
 	@Transactional
 	@Override
 	//What is the use of this method?  Do you want to know what are the circles created by me?
+	//The circle created by the user itself
 	public List<Circle> getCircle(String emailid) 
 	{
 		Query query=sessionFactory.getCurrentSession().createSQLQuery("select * from circle where circle_owner='"+emailid+"'");
@@ -103,7 +92,6 @@ public class CircleDAOImpl implements CircleDAO
 	{
 		Query query=sessionFactory.getCurrentSession().createQuery("select circle_id from Circle");
 		List<String> listCircleId=(List<String>)query.list();
-		System.out.println(listCircleId);
 		return listCircleId;
 	}
 	

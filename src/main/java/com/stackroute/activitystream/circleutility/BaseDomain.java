@@ -5,10 +5,10 @@ import javax.persistence.Transient;
 public class BaseDomain 
 {
 	@Transient
-	public String statusCode;
+	private String statusCode;
 	
 	@Transient
-	public String statusDesc;
+	private String statusDesc;
 
 	public String getStatusCode() {
 		return statusCode;

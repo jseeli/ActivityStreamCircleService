@@ -17,25 +17,22 @@ public class CircleController
 {
 	@Autowired
 	CircleDAO circleDAO;
-	
-	@Autowired
-	SubscribeCircleDAO subscribeCircleDAO;
-	
+		
 	@PostMapping("/createCircle")
 	public ResponseEntity<Circle> createCircle(@RequestBody Circle circle)
 	{
 		
 		circle.setCreation_date(new Date());
+		
 		if(circleDAO.createCircle(circle))
 		{
-			//statusCode and statudDesc shoule be private variables.  Should use only getter/setter methods
-			circle.statusCode="1025";
-			circle.statusDesc="Circle Created";
+			circle.setStatusCode("1025");
+			circle.setStatusDesc("Circle Created");
 		}
 		else
 		{
-			circle.statusCode="1026";
-			circle.statusDesc="Error happened While Creating Circle.";
+			circle.setStatusCode("1026");
+			circle.setStatusDesc("Error happened While Creating Circle.");
 		}
 		
 		return new ResponseEntity<Circle>(circle,HttpStatus.OK);
@@ -49,13 +46,13 @@ public class CircleController
 		System.out.println("--Remove Circle--"+circleID);
 		if(circleDAO.removeCircle(circleID))
 		{
-			circle.statusCode="1021";
-			circle.statusDesc="Successfully Circle Deleted";
+			circle.setStatusCode("1021");
+			circle.setStatusDesc("Problem Occured during Deletion");
 		}
 		else
 		{
-			circle.statusCode="1022";
-			circle.statusDesc="Problem Occured during Deletion";
+			circle.setStatusCode("1022");
+			circle.setStatusDesc("Circle Created");
 		}
 		
 		return new ResponseEntity<Circle>(circle,HttpStatus.OK);
@@ -67,13 +64,14 @@ public class CircleController
 		
 		if(circleDAO.updateCircle(circle))
 		{
-			circle.statusCode="1023";
-			circle.statusDesc="Successfully Circle Updated";
+			circle.setStatusCode("1023");
+			circle.setStatusDesc("Successfully Circle Updated");
+			
 		}
 		else
 		{
-			circle.statusCode="1024";
-			circle.statusDesc="Problem Occured While Updation";
+			circle.setStatusCode("1024");
+			circle.setStatusDesc("Problem Occured While Updation");
 		}
 		
 		return new ResponseEntity<Circle>(circle,HttpStatus.OK);

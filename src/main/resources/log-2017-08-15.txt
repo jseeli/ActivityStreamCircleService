@@ -1,0 +1,169 @@
+2817 [main] INFO  c.s.a.CircleServiceBoot - Starting CircleServiceBoot on HYD-SDO-SRINIVAS with PID 12176 (C:\TTT-ActivityStreamMicroservices\CircleService\target\classes started by Global.Root in C:\TTT-ActivityStreamMicroservices\CircleService)
+2832 [main] INFO  c.s.a.CircleServiceBoot - No active profile set, falling back to default profiles: default
+3080 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b2ea799: startup date [Tue Aug 15 23:16:12 IST 2017]; root of context hierarchy
+3900 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+9339 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab6ea3bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12701 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8087 (http)
+12760 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+12764 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+13340 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13341 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10277 ms
+14106 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14120 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14121 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14122 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14123 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16483 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16555 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16868 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+16873 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+16881 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+17599 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18108 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19914 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b2ea799: startup date [Tue Aug 15 23:16:12 IST 2017]; root of context hierarchy
+21982 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateCircle],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.stackroute.activitystream.circleutility.Circle> com.stackroute.activitystream.circleutility.CircleController.updateCircle(com.stackroute.activitystream.circleutility.Circle)
+21985 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/createCircle],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.stackroute.activitystream.circleutility.Circle> com.stackroute.activitystream.circleutility.CircleController.createCircle(com.stackroute.activitystream.circleutility.Circle)
+21987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getCircleByUser/{emailid}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.stackroute.activitystream.circleutility.Circle>> com.stackroute.activitystream.circleutility.CircleController.getCircleByUser(java.lang.String)
+21988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/removeCircle/{circleID}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.stackroute.activitystream.circleutility.Circle> com.stackroute.activitystream.circleutility.CircleController.removeCircle(java.lang.String)
+21988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getAllCircles],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<java.lang.String>> com.stackroute.activitystream.circleutility.CircleController.getAllCircles()
+21997 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21999 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22154 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22155 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22335 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23628 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23717 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+23767 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8087]
+23816 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler [http-nio-8087]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.stackroute.activitystream.CircleServiceBoot.main(CircleServiceBoot.java:17)
+23823 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8087]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8087]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.stackroute.activitystream.CircleServiceBoot.main(CircleServiceBoot.java:17)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 14 common frames omitted
+23855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8087"]
+23856 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+23941 [main] INFO  o.a.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+23943 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"]
+23944 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8087"]
+23959 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+23974 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8087 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8087, or configure this application to listen on another port.
+
+23990 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b2ea799: startup date [Tue Aug 15 23:16:12 IST 2017]; root of context hierarchy
+23997 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+24002 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+24003 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: EntityManagerFactory is closed
+2850 [main] INFO  c.s.a.CircleServiceBoot - Starting CircleServiceBoot on HYD-SDO-SRINIVAS with PID 10500 (C:\TTT-ActivityStreamMicroservices\CircleService\target\classes started by Global.Root in C:\TTT-ActivityStreamMicroservices\CircleService)
+2861 [main] INFO  c.s.a.CircleServiceBoot - No active profile set, falling back to default profiles: default
+3088 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b2ea799: startup date [Tue Aug 15 23:17:20 IST 2017]; root of context hierarchy
+3951 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+9218 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab6ea3bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12533 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8087 (http)
+12589 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+12594 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+13152 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13153 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10077 ms
+13908 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+13922 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13923 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13924 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13925 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16225 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16298 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16615 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+16620 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+16627 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+17385 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17876 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19695 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21415 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b2ea799: startup date [Tue Aug 15 23:17:20 IST 2017]; root of context hierarchy
+21762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/createCircle],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.stackroute.activitystream.circleutility.Circle> com.stackroute.activitystream.circleutility.CircleController.createCircle(com.stackroute.activitystream.circleutility.Circle)
+21766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/removeCircle/{circleID}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.stackroute.activitystream.circleutility.Circle> com.stackroute.activitystream.circleutility.CircleController.removeCircle(java.lang.String)
+21767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateCircle],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.stackroute.activitystream.circleutility.Circle> com.stackroute.activitystream.circleutility.CircleController.updateCircle(com.stackroute.activitystream.circleutility.Circle)
+21769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getAllCircles],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<java.lang.String>> com.stackroute.activitystream.circleutility.CircleController.getAllCircles()
+21770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getCircleByUser/{emailid}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.stackroute.activitystream.circleutility.Circle>> com.stackroute.activitystream.circleutility.CircleController.getCircleByUser(java.lang.String)
+21780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21782 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21922 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21923 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22111 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23409 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23501 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+23556 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8087]
+23613 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23675 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8087 (http)
+23691 [main] INFO  c.s.a.CircleServiceBoot - Started CircleServiceBoot in 22.852 seconds (JVM running for 24.628)
+257915 [http-nio-8087-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+257916 [http-nio-8087-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+258026 [http-nio-8087-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 108 ms
+258452 [http-nio-8087-exec-1] INFO  c.s.a.circleutility.LoggerUtility - --- Method Executed at ---
+258571 [http-nio-8087-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+984162 [http-nio-8087-exec-3] INFO  c.s.a.circleutility.LoggerUtility - --- Method Executed at ---
